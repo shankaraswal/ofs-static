@@ -1,0 +1,23 @@
+$sm-viewport-max-width: 480px;
+$md-viewport-max-width: 1024px;
+
+$md-viewport-min-width: #{$sm-viewport-max-width + 1px};
+$lg-viewport-min-width: #{$md-viewport-max-width + 1px};
+
+@mixin mobile {
+  @media (max-width: $sm-viewport-max-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $md-viewport-min-width) and (max-width: $md-viewport-max-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $lg-viewport-min-width) {
+    @content;
+  }
+}

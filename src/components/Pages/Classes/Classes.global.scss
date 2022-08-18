@@ -1,0 +1,78 @@
+@import '../../../theming/theme/foundation/color.scss';
+
+.class-listheader { text-align: right; }
+
+.classList2 {
+  width: 100%;
+  border: 1px solid #e8e9e9;
+  padding-bottom: 0;
+  padding-top: 0;
+  // padding-left: 8px;
+  margin-bottom: 0;
+  // padding-right: 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #e8e9e9;
+
+  button {
+    border-radius: 25px;
+    text-transform: capitalize;
+
+    /* color: blue; */
+    border-color: $gray-3;
+  }
+
+  .avatar {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .listHead {
+    background-color: $gray-0;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  .classList2 .pointer {
+    align-self: normal;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.modalHeaderImg {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+
+  /* width: -webkit-fil-wavailable; */
+}
+
+.instructorsList {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.pointer { cursor: pointer; }
+
+
+/*
+root: {
+  width: '100%',
+},
+paper: {
+  padding: theme.spacing(1),
+  borderBottom: '1px solid #F8F9F9',
+},
+avatar:{
+    width: '24px',
+    height: '24px',
+}
+*/

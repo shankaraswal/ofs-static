@@ -1,0 +1,197 @@
+// import React from 'react';
+// import { makeStyles, useTheme } from '@material-ui/core/styles';
+// import AppBar from '@material-ui/core/AppBar';
+// import Toolbar from '@material-ui/core/Toolbar';
+// import Typography from '@material-ui/core/Typography'
+// import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import {Menu, Button } from '@material-ui/core';
+// import PropTypes from 'prop-types';
+// import useMediaQuery from "@material-ui/core/useMediaQuery";
+// import { withRouter } from "react-router-dom";
+import React from "react";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import PropTypes from 'prop-types';
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+import Button from "@material-ui/core/Button";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { withRouter } from "react-router-dom";
+
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1
+  },
+  menuButton: {
+    marginRight: theme.spacing(0)
+  },
+  title: {
+    [theme.breakpoints.down("xs")]: {
+      flexGrow: 1
+    }
+  },
+  headerOptions: {
+    display: "flex",
+    flex: 1,
+    //justifyContent: "space-evenly"
+    
+  },
+  topnavLinks: {
+    color: '#ff0000 !important',
+  },
+}));
+
+const Header = props => {
+  const { history } = props;
+  const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
+
+  const handleMenu = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClick = pageURL => {
+    history.push(pageURL);
+    setAnchorEl(null);
+  };
+
+  const handleButtonClick = pageURL => {
+    history.push(pageURL);
+  };
+
+  const menuItems = [
+    {
+      menuTitle: "Classes",
+      pageURL: "/"
+    },
+    {
+      menuTitle: "Packages",
+      pageURL: "/"
+    },
+    {
+      menuTitle: "Privates",
+      pageURL: "/"
+    },
+    {
+      menuTitle: "Workshops",
+      pageURL: "/"
+    },
+    {
+      menuTitle: "Gift cards",
+      pageURL: "/"
+    }
+  ];
+  return (
+    <React.Fragment>
+      <AppBar
+        component="navbar"
+        color="none"
+        position="static"
+        elevation={0}
+      >
+        <Toolbar>
+        {/* Logo */}
+          <Typography variant="h6" className={classes.title}>
+            Logo
+          </Typography>
+
+
+          {isMobile ? (
+            <>
+              <IconButton
+                edge="start"
+                className={classes.menuButton}
+                color="inherit"
+                aria-label="menu"
+                onClick={handleMenu}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right"
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right"
+                }}
+                open={open}
+                onClose={() => setAnchorEl(null)}
+              >
+                {menuItems.map(menuItem => {
+                  const { menuTitle, pageURL } = menuItem;
+                  return (
+                    <MenuItem onClick={() => handleMenuClick(pageURL)}>
+                      {menuTitle}
+                    </MenuItem>
+                  );
+                })}
+              </Menu>
+            </>
+          ) : (
+            <div className={classes.headerOptions}>
+              <Button
+                variant="text"
+                className="topnavLinks"
+                onClick={() => handleButtonClick("/")}
+              >
+                Classes
+              </Button>
+              <Button
+                variant="text"
+                className="topnavLinks"
+                onClick={() => handleButtonClick("/")}
+              >
+                Packages
+              </Button>
+              <Button
+                variant="text"
+                className="topnavLinks"
+                onClick={() => handleButtonClick("/")}
+              >
+                Privates
+              </Button>
+              <Button
+                variant="text"
+                className="topnavLinks"
+                onClick={() => handleButtonClick("/")}
+              >
+                Workshops
+              </Button>
+              <Button
+                variant="text"
+                className="menuitem"
+                onClick={() => handleButtonClick("/")}
+              >
+                Gift cards
+              </Button>
+            </div>
+          )}
+        </Toolbar>
+      </AppBar>
+    </React.Fragment>
+  );
+}
+
+Header.propTypes = {
+  classes: PropTypes.object.isRequired,
+  onDrawerToggle: PropTypes.func.isRequired,
+};
+
+//export default (Header);
+
+export default withRouter(Header);

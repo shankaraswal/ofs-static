@@ -1,0 +1,40 @@
+@import '../theme/foundation/color.scss';
+//@import '../theme/foundation/color.js';
+@font-face {
+    font-family: 'avertape-semibold';
+    src: url('../../source/fonts/avertape-semibold-webfont.woff2') format('woff2'),
+         url('../../source/fonts/avertape-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.ofs_base {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px;
+    background: $gray-56;
+}
+
+.ofs_snackbar{
+    font-family: 'avertape-semibold';
+    top: 24px;
+    bottom: auto;
+    /*padding: 12px 16px !important;*/
+
+    .success{
+    background: $green-base !important;
+    color: $white !important;
+    border-radius: 0 !important;
+    }
+    
+    .error{
+    background: $red-base !important;
+    color: $white !important;
+    border-radius: 0 !important;
+    }
+
+    svg{
+        color: $white !important;
+    }
+}

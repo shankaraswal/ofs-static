@@ -1,0 +1,32 @@
+[
+  {
+    "widgetID": "1",
+    "corporateID": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "siteID": "S0RnRmFCQ2JYWFpXcmowcURKbHQydz09", 
+    "widgetVersion": "",  
+    "widgetThemeConfig": {
+      "backgroundColor": "",
+      "primaryColor": "",
+      "primaryTextColor": "",
+      "secondaryColor": "",
+      "secondaryTextColor": ""
+    },
+    "widgetSiteConfig": {}, 
+    "analyticsConfig": {}
+  },
+  {
+    "widgetID": "2",
+    "corporateID": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+    "siteID": "S0RnRmFCQ2JYWFpXcmowcURKbHQydz09",  
+    "widgetVersion": "",
+    "widgetThemeConfig": {
+      "backgroundColor": "",
+      "primaryColor": "",
+      "primaryTextColor": "",
+      "secondaryColor": "",
+      "secondaryTextColor": ""
+    },
+    "widgetSiteConfig": {},
+    "analyticsConfig": {}
+  }
+]

@@ -1,0 +1,36 @@
+{
+<<<<<<< HEAD
+  "short_name": "Boilerplate React",
+  "name": "Boilerplate React",
+=======
+  "short_name": "React App",
+  "name": "Create React App Sample",
+>>>>>>> c8f897d9c34cbe8103ae3268996b445f5cb39b12
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+<<<<<<< HEAD
+    }
+  ],
+  "start_url": "./index.html",
+=======
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+>>>>>>> c8f897d9c34cbe8103ae3268996b445f5cb39b12
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

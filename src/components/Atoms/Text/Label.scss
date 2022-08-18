@@ -1,0 +1,18 @@
+@import '../../../theming/config';
+
+.label {
+  display: inline-block;
+  padding: 6px 2em;
+  text-align: center;
+  font-family: $font-family-primary;
+  color: $color-text-title;
+  background-color: $color-fill-white;
+  font-size: $font-size-medium;
+  white-space: nowrap;
+
+  &--striking {
+    color: $color-white;
+    background-color: $color-fill-label;
+    font-family: $font-family-primary;
+  }
+}

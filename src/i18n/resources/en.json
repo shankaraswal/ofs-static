@@ -1,0 +1,76 @@
+{
+  "privates": {
+    "loginButton": "Login ",
+    "loginText": "to see your private sessions",
+    "description": "Or choose a session type below to book your first private session.",
+    "bookButton": "Book",
+    "loggedIn": "Logged in as ",
+    "sessionType": {
+      "backAction": "New Private",
+      "titleSelect": "Select a session type"
+    },
+    "instructor": {
+      "backAction": "Session type",
+      "titleSelect": "Select an instructor",
+      "any": "Any available",
+      "listTitle": "All instructors"
+    },
+    "timeSlot": {
+      "backAction": "Instructors",
+      "titleSelect": "Select a time slot"
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "subtitle": "If you already have an account, login to continue booking.",
+    "emailField": "Email",
+    "passwordField": "Password",
+    "buttonLogin": "Log in",
+    "forgotPassword": "Forgot your password?",
+    "helpSigningIn": "Get help with signing in",
+    "createAccount": "Create an account",
+    "createAccountDescription": "New to OneFitStop? Please create an account to continue booking.",
+    "buttonSignUp": "Sign up"
+  },
+  "signUp": {
+    "title": "Sign up",
+    "subtitle": "Create your account to continue booking.",
+    "firstNameField": "First name",
+    "lastNameField": "Last name",
+    "emailField": "Email address",
+    "passwordField": "Create a password",
+    "phoneField": "Phone number",
+    "passwordInfo": "Password must be at least 8 characters",
+    "confirmPasswordField": "Confirm password",
+    "haveAccount": "Already have an account?",
+    "buttonSignIn": "Sign in"
+  },
+  "additionalInfo": {
+    "title": "Hello, ",
+    "subtitle": "To continue, please complete the information below.",
+    "birthdayTitle": "What’s your birthday?",
+    "addressTitle": "What’s your address?",
+    "emergencyTitle": "What's your emergency contact?",
+    "birthField": "Date of birth",
+    "addressField": "Address",
+    "emergencyNameField": "Name"
+  },
+  "terms": {
+    "title": "Do you agree to OneFitStop’s terms?",
+    "textAgree": "I agree to the"
+  },
+  "filters": {
+    "calendarTitle": "Select a date range",
+    "calendarStartLabel": "Start date",
+    "calendarEndLabel": "End date",
+    "calendarApply": "Apply",
+    "byDate": "Filter by date"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "stepOf": "of",
+    "next": "Next",
+    "saveContinue": "Save and continue"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "success": true,
+  "data": {
+    "siteID": "MHJ4a2FnbVRzcnRjZ3BPWVdjZDFidz09",
+    "primaryInfo": [
+      {
+        "fieldName": "firstname",
+        "fieldLabel": "First Name",
+        "fieldType": "alphaText",
+        "required": true,
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "lastname",
+        "fieldLabel": "Last Name",
+        "fieldType": "alphaText",
+        "required": true,
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "email",
+        "fieldLabel": "Email",
+        "fieldType": "email",
+        "required": true,
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "phone",
+        "fieldLabel": "Phone",
+        "fieldType": "phone",
+        "required": true,
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "password",
+        "fieldLabel": "Password",
+        "fieldType": "password",
+        "required": true,
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "confirmpassword",
+        "fieldLabel": "Confirm Password",
+        "fieldType": "password",
+        "required": true,
+        "fieldValue": ""
+      }
+    ],
+    "policies": [
+      {
+        "policyName": "New Agreement Policy & Check",
+        "policyID": "NVB6WmI2aG9qd0JOazFvRklzeHJHZz09"
+      },
+      { "policyName": "New Policy", "policyID": "NFRialFheEI2QkxEcUZlMnNKaDB2UT09" },
+      { "policyName": "Mark @@$$%%", "policyID": "MHRWV2QwNVZ6UERuNTVwM0t3ZStMQT09" },
+      { "policyName": "IMPORT POLICY", "policyID": "V2daUFRuRi9WVTBnbnU1M2ZIOGZTdz09" },
+      { "policyName": "fnbgfn", "policyID": "TTFESjduRWNyeHZlOXN1Q0lrd0RsZz09" },
+      { "policyName": "Frank", "policyID": "Nk1oenlCcVgwRHhzSGJrZ0IyWVV4Zz09" },
+      { "policyName": "Akash", "policyID": "YS9nUmI0UlBJM2JjcU9lVXJNYlI4UT09" },
+      { "policyName": " Cancellation Policy", "policyID": "a3Yxbm8wVVZBeVdGK1ovZ1kyZ0NyUT09" },
+      {
+        "policyName": "Joining Policy and Agreement ",
+        "policyID": "SDBVN0xMam9EQU51RjgyZU14VTNuUT09"
+      }
+    ]
+  }
+}

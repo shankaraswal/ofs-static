@@ -1,0 +1,17 @@
+/* stylelint-disable selector-type-no-unknown */
+
+@import '_colors.scss';
+@import '_media-queries.scss';
+@import '_fonts.scss';
+
+/*
+* BASIC SETUP
+*/
+.onefitstop-base {
+  color: $dark-gray;
+  font-family: 'Averta', sans-serif;
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

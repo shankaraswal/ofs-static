@@ -1,0 +1,20 @@
+
+.toolbar{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.topnavLinks{
+    border-bottom: 4px solid transparent; 
+    border-radius: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &.is-active{
+        border-color: inherit; 
+    }
+    &:hover{
+        border-color: inherit;
+        background-color: transparent;
+    }
+}

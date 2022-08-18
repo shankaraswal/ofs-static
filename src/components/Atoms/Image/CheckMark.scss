@@ -1,0 +1,19 @@
+@import '../../../theming/config';
+
+.check-mark {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__unselected-image {
+    border-style: solid;
+    border-width: 5px;
+    border-color: $color-fill-check-mark;
+  }
+
+  &__selected-image {
+    padding: 5px;
+    border-color: $color-text-title;
+    background-color: $color-fill-check-mark;
+  }
+}
